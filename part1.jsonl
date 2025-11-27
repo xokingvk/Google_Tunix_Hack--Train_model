@@ -18,3 +18,5 @@
 {"question":"Count words in a sentence.","steps":["Read sentence","Split words","Print length"],"final_code":"s=input();print(len(s.split()))"}
 {"question":"Find length of a string.","steps":["Read s","Use len","Print length"],"final_code":"s=input();print(len(s))"}
 {"question":"Replace a character in a string.","steps":["Read s","Read old character","Read new character","Replace and print"],"final_code":"s=input();old=input().strip();new=input().strip();print(s.replace(old,new))"}
+{"question":"Find the largest of three numbers.","steps":["Read a,b,c","Compare using max()","Print the largest value"],"final_code":"a,b,c=map(int,input().split());print(max(a,b,c))"}
+{"question":"Check if a string contains only digits.","steps":["Read input string","Use str.isdigit()","Print True or False"],"final_code":"s=input();print(s.isdigit())"}
