@@ -47,17 +47,9 @@
 {"question":"Calculate the circumference of a circle.","steps":["Read radius r","Apply formula 2*3.14*r","Print circumference"],"final_code":"r=float(input());print(2*3.14*r)"}
 {"question":"Convert Celsius to Fahrenheit.","steps":["Read Celsius value C","Apply F = C*9/5 + 32","Print F"],"final_code":"c=float(input());print(c*9/5+32)"}
 {"question":"Convert Fahrenheit to Celsius.","steps":["Read Fahrenheit value F","Apply C = (F-32)*5/9","Print C"],"final_code":"f=float(input());print((f-32)*5/9)"}
-{"question":"Check if a character is a vowel.","steps":["Read character c","Lowercase c","Check if in 'aeiou' and print result"],"final_code":"c=input().strip().lower();print('Vowel' if c in 'aeiou' else 'Not vowel')"}
 {"question":"Find the last digit of a number.","steps":["Read n","Compute n % 10","Print last digit"],"final_code":"n=int(input());print(n%10)"}
 {"question":"Check if a number is a multiple of 7.","steps":["Read n","Check n % 7 == 0","Print Yes or No"],"final_code":"n=int(input());print('Yes' if n%7==0 else 'No')"}
 {"question":"Calculate simple interest.","steps":["Read P, R, T","Apply formula P*R*T/100","Print SI"],"final_code":"p,r,t=map(float,input().split());print(p*r*t/100)"}
 {"question":"Convert minutes to hours and minutes.","steps":["Read total minutes","Compute hours = m // 60","Compute minutes = m % 60","Print result"],"final_code":"m=int(input());print(m//60,m%60)"}
-{"question":"Check if a number is a palindrome.","steps":["Read n as string","Compare n with n[::-1]","Print result"],"final_code":"n=input();print('Palindrome' if n==n[::-1] else 'Not palindrome')"}
-{"question":"Find the GCD of two numbers.","steps":["Read a and b","Use math.gcd","Print GCD"],"final_code":"import math;a,b=map(int,input().split());print(math.gcd(a,b))"}
-{"question":"Find the LCM of two numbers.","steps":["Read a and b","Compute using formula a*b//gcd","Print LCM"],"final_code":"import math;a,b=map(int,input().split());print(a*b//math.gcd(a,b))"}
-{"question":"Check if a year is a leap year.","steps":["Read year","Apply leap year rules","Print Yes or No"],"final_code":"y=int(input());print('Yes' if (y%4==0 and y%100!=0) or (y%400==0) else 'No')"}
 {"question":"Calculate the average of numbers in a list.","steps":["Read list of numbers","Compute sum(arr)/len(arr)","Print the average"],"final_code":"arr=list(map(float,input().split()));print(sum(arr)/len(arr))"}
-{"question":"Check if a substring exists within a string.","steps":["Read main string","Read substring","Check if substring in main string","Print result"],"final_code":"s=input();sub=input();print('Found' if sub in s else 'Not found')"}
-{"question":"Merge two lists.","steps":["Read first list","Read second list","Extend first list with second","Print merged list"],"final_code":"a=list(map(int,input().split()));b=list(map(int,input().split()));a.extend(b);print(a)"}
 {"question":"Find the index of an element in a list.","steps":["Read list","Read element x","If x in list print index","Else print -1"],"final_code":"arr=list(map(int,input().split()));x=int(input());print(arr.index(x) if x in arr else -1)"}
-{"question":"Rotate a list to the right by k positions.","steps":["Read list","Read k","Compute k modulo length","Slice and rotate","Print rotated list"],"final_code":"arr=list(map(int,input().split()));k=int(input());k%=len(arr);print(arr[-k:]+arr[:-k])"}
