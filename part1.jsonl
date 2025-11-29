@@ -28,6 +28,8 @@
 {"question":"Reverse a list of numbers.","steps":["Read list of integers","Reverse list using slicing arr[::-1]","Print the reversed list"],"final_code":"arr=list(map(int,input().split()));print(arr[::-1])"}
 {"question":"Find the second largest number in a list.","steps":["Read list","Remove duplicates using set","Sort list","Print second largest"],"final_code":"arr=list(map(int,input().split()));arr=sorted(set(arr));print(arr[-2])"}
 {"question":"Check if a list is empty.","steps":["Read the list of integers","Check if the list has length 0","If length is 0 print 'Empty'","Otherwise print 'Not empty'"],"final_code":"arr=list(map(int,input().split()));print('Empty' if len(arr)==0 else 'Not empty')"}
+{"question":"Find the index of an element in a list.","steps":["Read list","Read element x","If x in list print index","Else print -1"],"final_code":"arr=list(map(int,input().split()));x=int(input());print(arr.index(x) if x in arr else -1)"}
+{"question":"Calculate the average of numbers in a list.","steps":["Read list of numbers","Compute sum(arr)/len(arr)","Print the average"],"final_code":"arr=list(map(float,input().split()));print(sum(arr)/len(arr))"}
 {"question":"Print numbers from 1 to N.","steps":["Read N","Loop from 1 to N","Print each number"],"final_code":"n=int(input())\\nfor i in range(1,n+1):\\n    print(i)"}
 {"question":"Print the multiplication table of a number.","steps":["Read n","Loop from 1 to 10","Print n*i"],"final_code":"n=int(input())\\nfor i in range(1,11):\\n    print(n,'x',i,'=',n*i)"}
 {"question":"Print all even numbers in a range.","steps":["Read start and end","Loop through range","Print even numbers"],"final_code":"a,b=map(int,input().split())\\nfor i in range(a,b+1):\\n    if i%2==0: print(i)"}
@@ -38,8 +40,6 @@
 {"question":"Print all characters of a string.","steps":["Read string s","Loop through characters","Print each character"],"final_code":"s=input()\\nfor c in s:\\n    print(c)"}
 {"question":"Print numbers divisible by 3 in a range.","steps":["Read start and end","Loop through range","Check divisibility","Print numbers divisible by 3"],"final_code":"a,b=map(int,input().split())\\nfor i in range(a,b+1):\\n    if i%3==0: print(i)"}
 {"question":"Print the squares of numbers from 1 to N.","steps":["Read integer N","Loop from 1 to N","Compute i*i","Print each squared value"],"final_code":"n=int(input())\\nfor i in range(1,n+1):\\n    print(i*i)"}
-{"question":"Find the largest of three numbers.","steps":["Read a,b,c","Compare using max()","Print the largest value"],"final_code":"a,b,c=map(int,input().split());print(max(a,b,c))"}
-{"question":"Check if a string contains only digits.","steps":["Read input string","Use str.isdigit()","Print True or False"],"final_code":"s=input();print(s.isdigit())"}
 {"question":"Calculate the area of a circle.","steps":["Read radius r","Apply formula area = 3.14*r*r","Print area"],"final_code":"r=float(input());print(3.14*r*r)"}
 {"question":"Find the area of a rectangle.","steps":["Read length and width","Multiply length and width","Print area"],"final_code":"l,w=map(float,input().split());print(l*w)"}
 {"question":"Find the perimeter of a rectangle.","steps":["Read length and width","Compute 2*(l+w)","Print perimeter"],"final_code":"l,w=map(float,input().split());print(2*(l+w))"}
@@ -47,9 +47,7 @@
 {"question":"Calculate the circumference of a circle.","steps":["Read radius r","Apply formula 2*3.14*r","Print circumference"],"final_code":"r=float(input());print(2*3.14*r)"}
 {"question":"Convert Celsius to Fahrenheit.","steps":["Read Celsius value C","Apply F = C*9/5 + 32","Print F"],"final_code":"c=float(input());print(c*9/5+32)"}
 {"question":"Convert Fahrenheit to Celsius.","steps":["Read Fahrenheit value F","Apply C = (F-32)*5/9","Print C"],"final_code":"f=float(input());print((f-32)*5/9)"}
-{"question":"Find the last digit of a number.","steps":["Read n","Compute n % 10","Print last digit"],"final_code":"n=int(input());print(n%10)"}
-{"question":"Check if a number is a multiple of 7.","steps":["Read n","Check n % 7 == 0","Print Yes or No"],"final_code":"n=int(input());print('Yes' if n%7==0 else 'No')"}
 {"question":"Calculate simple interest.","steps":["Read P, R, T","Apply formula P*R*T/100","Print SI"],"final_code":"p,r,t=map(float,input().split());print(p*r*t/100)"}
 {"question":"Convert minutes to hours and minutes.","steps":["Read total minutes","Compute hours = m // 60","Compute minutes = m % 60","Print result"],"final_code":"m=int(input());print(m//60,m%60)"}
-{"question":"Calculate the average of numbers in a list.","steps":["Read list of numbers","Compute sum(arr)/len(arr)","Print the average"],"final_code":"arr=list(map(float,input().split()));print(sum(arr)/len(arr))"}
-{"question":"Find the index of an element in a list.","steps":["Read list","Read element x","If x in list print index","Else print -1"],"final_code":"arr=list(map(int,input().split()));x=int(input());print(arr.index(x) if x in arr else -1)"}
+
+
